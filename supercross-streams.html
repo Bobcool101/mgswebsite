@@ -7,29 +7,6 @@
     <meta name="keywords" content="Streams, Sports Streams, NBA Streams, WWE Streams, F1 Streams, NFL Streams, Soccer Streams">
     <meta name="viewport" content="width=device-width, initial-scale=.8">
     <link rel="shortcut icon" type="x-icon" href="pics/logo.png">
-  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
-  <script>
-    // default options
-    ConsoleBan.init()
-    // custom options
-    ConsoleBan.init({
-      redirect: '/'
-    })
-  </script>
-    <script>
-        // Disable right-click
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-        });
-
-        // Disable access to developer tools
-        document.addEventListener('keydown', function (e) {
-            if ((e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))) ||
-                (e.ctrlKey && e.shiftKey && e.key === 'J')) {
-                e.preventDefault();
-            }
-        });
-    </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
     <script src="https://kit.fontawesome.com/5250930a26.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -47,15 +24,6 @@
     <link href="/css/player&buttons.css" rel="stylesheet">
     <link href="/css/mobile.css" rel="stylesheet">
     <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8DB3G2HXM"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-F8DB3G2HXM');
-    </script>
     <style>
 
     </style>
@@ -95,6 +63,19 @@
             </nav>
         </div>
     </header>
+    <style>
+        /* Add any additional styles you need */
+        #playerContainer {
+            height: 520px; /* Set the default height for both players */
+            width: 100%;
+        }
+        .kickPlayer {
+            height: 520px; /* Set the height for the Kick player */
+            width: 100%; /* Set the width for the Kick player */
+            border: none; /* Remove border around the Kick player */
+        }
+    </style>
+</head>
     <main>
         <div class="promobuttons">
             <a href="https://discord.com/invite/Rf2SFRtJFz"><button class="followbuttons">Discord</button></a>
@@ -106,18 +87,23 @@
                 <div class="streambuttoncase">
                     <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/sx.m3u8')">Stream 1</button>
                     <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/sx.m3u8')">Stream 2</button>
-                    <button class="streambutton" onclick="showPlayer('transcode', '1')">Stream 3</button>
+                    <button class="streambutton" onclick="showPlayer('kick', 'https://player.kick.com/cooldudes9001')">Stream 3 (Kick)</button>
                 </div>
                 <!-- Players -->
                 <div class="player" id="playerContainer"></div>
                 <!-- JavaScript to control the visibility of video elements -->
                 <script>
                     var clapprPlayer;
+                    var kickPlayer;
                     var activePlayer;
     
                     function showPlayer(playerType, stream) {
                         if (activePlayer === "clappr" && clapprPlayer) {
                             clapprPlayer.stop();
+                        } else if (activePlayer === "kick" && kickPlayer) {
+                            // Stop Kick player if it's active
+                            var container = document.getElementById("playerContainer");
+                            container.innerHTML = ""; // Clear container
                         }
     
                         activePlayer = playerType;
@@ -132,11 +118,20 @@
                                 width: "100%",
                                 disableVideoTagContextMenu: false,
                             });
-                        } else if (playerType === "transcode") {
-                            container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/transcoding/excess" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                        } else if (playerType === "kick") {
+                            container.innerHTML = ""; // Clear container
+                            // Embed the Kick player here
+                            // You may need to adjust this depending on the Kick player API
+                            kickPlayer = document.createElement("iframe");
+                            kickPlayer.src = stream;
+                            kickPlayer.width = "100%";
+                            kickPlayer.height = "520";
+                            kickPlayer.frameborder = "0";
+                            kickPlayer.scrolling = "no";
+                            kickPlayer.allowfullscreen = "true";
+                            kickPlayer.classList.add("kickPlayer");
+                            container.appendChild(kickPlayer);
                         }
-
-
                     }
     
                     // Automatically load the Clappr player on page load
