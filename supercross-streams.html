@@ -24,15 +24,6 @@
     <link href="/css/player&buttons.css" rel="stylesheet">
     <link href="/css/mobile.css" rel="stylesheet">
     <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8DB3G2HXM"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-F8DB3G2HXM');
-    </script>
     <style>
 
     </style>
@@ -44,7 +35,6 @@
             <a class="webtitle" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 30px; margin-top:15px; margin-bottom:15px;" href="/"> MrGamingStreams</a>
             <a class="webtitlemobile" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 23px; margin-top:15px; margin-bottom:15px;" href="/"> MrGamingStreams</a>
             <a class="tagline" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 150; font-style: italic; font-size: 20px; margin-top:15px; margin-bottom:15px;">Free Streams, Forever</a>
-            <script id="cid0020000367563933714" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 1px;height: 1px;">{"handle":"mrgamingstreams1","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100}}</script>
         </div>
         <div class="HeaderRight">
             <a class="headertxt" href="/soccer">Soccer</a>
@@ -73,19 +63,6 @@
             </nav>
         </div>
     </header>
-    <style>
-        /* Add any additional styles you need */
-        #playerContainer {
-            height: 520px; /* Set the default height for both players */
-            width: 100%;
-        }
-        .kickPlayer {
-            height: 520px; /* Set the height for the Kick player */
-            width: 100%; /* Set the width for the Kick player */
-            border: none; /* Remove border around the Kick player */
-        }
-    </style>
-</head>
     <main>
         <div class="promobuttons">
             <a href="https://discord.com/invite/Rf2SFRtJFz"><button class="followbuttons">Discord</button></a>
@@ -96,23 +73,18 @@
             <div class="player">
                 <div class="streambuttoncase">
                     <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/sx.m3u8')">Stream 1</button>
-                    <button class="streambutton" onclick="showPlayer('transcode', '1')">Stream 2</button>
+                    <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/sx.m3u8')">Stream 2</button>
                 </div>
                 <!-- Players -->
                 <div class="player" id="playerContainer"></div>
                 <!-- JavaScript to control the visibility of video elements -->
                 <script>
                     var clapprPlayer;
-                    var kickPlayer;
                     var activePlayer;
     
                     function showPlayer(playerType, stream) {
                         if (activePlayer === "clappr" && clapprPlayer) {
                             clapprPlayer.stop();
-                        } else if (activePlayer === "kick" && kickPlayer) {
-                            // Stop Kick player if it's active
-                            var container = document.getElementById("playerContainer");
-                            container.innerHTML = ""; // Clear container
                         }
     
                         activePlayer = playerType;
@@ -127,24 +99,7 @@
                                 width: "100%",
                                 disableVideoTagContextMenu: false,
                             });
-                        } else if (playerType === "kick") {
-                            container.innerHTML = ""; // Clear container
-                            // Embed the Kick player here
-                            // You may need to adjust this depending on the Kick player API
-                            kickPlayer = document.createElement("iframe");
-                            kickPlayer.src = stream;
-                            kickPlayer.width = "100%";
-                            kickPlayer.height = "520";
-                            kickPlayer.frameborder = "0";
-                            kickPlayer.scrolling = "no";
-                            kickPlayer.allowfullscreen = "true";
-                            kickPlayer.classList.add("kickPlayer");
-                            container.appendChild(kickPlayer);
-                    } else if (playerType === "transcode") {
-                        container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/transcoding/excess" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
-                    }
-
-
+                        }
                     }
     
                     // Automatically load the Clappr player on page load
