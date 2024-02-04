@@ -75,6 +75,23 @@
                         showPlayer('clappr', 'https://247b.mrgamingstreams.com/mrgamingbein.m3u8'); // Default stream
                     };
                 </script>
-<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+<noscript>
+    <meta http-equiv="refresh" content="0;url=https://mrgamingstreams.com">
+</noscript>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var isJavaScriptEnabled = true;
+
+        try {
+            var testElement = document.createElement('div');
+        } catch (e) {
+            isJavaScriptEnabled = false;
+        }
+
+        if (!isJavaScriptEnabled) {
+            window.location.href = 'https://mrgamingstreams.com';
+        }
+    });
+</script>
 </body>
 </html>

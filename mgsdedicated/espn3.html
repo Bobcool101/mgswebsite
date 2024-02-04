@@ -24,20 +24,23 @@
           height: '100%',
           width: '100%',
           autoPlay: true,
-          plugins: [LevelSelector, DashShakaPlayback, Clappr.MediaControl],
-          events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},},
-          chromecast: {
-              appId: '9DFB77C0',
-              contentType: 'video/mp4',
-          },
-          shakaConfiguration: {
-              drm: {
-              clearKeys: {
-     'f4c9f97e2a36feab0e5077f2b44cbc4e':'1743cd03dfe3736b2c95da91a783af38'
-                  }
-              },
-          },
-          shakaOnBeforeLoad: function (shaka_player) {},
-          parentId: '#player'
-      });
-  </script>
+<noscript>
+    <meta http-equiv="refresh" content="0;url=https://mrgamingstreams.com">
+</noscript>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var isJavaScriptEnabled = true;
+
+        try {
+            var testElement = document.createElement('div');
+        } catch (e) {
+            isJavaScriptEnabled = false;
+        }
+
+        if (!isJavaScriptEnabled) {
+            window.location.href = 'https://mrgamingstreams.com';
+        }
+    });
+</script>
+</body>
+</html>
