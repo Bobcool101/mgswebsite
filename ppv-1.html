@@ -95,8 +95,9 @@
         <div class="fullplayer">
          <div class="player">
             <div class="streambuttoncase">
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingppv.m3u8')">Stream 1</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/fsp.m3u8')">Stream 2 (ES)</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingppv.m3u8')">ESPN+</button>
+                <button class="streambutton" onclick="showPlayer('transcode', '1')">ESPN+ (ALT)</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/fsp.m3u8')">Spanish</button>
                 <button class="streambutton" onclick="showPlayer('actualtwitch', 'andy_king_z')">Twitch</button>
             </div>
                     <!-- Players -->
@@ -131,6 +132,8 @@
                     container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/tnt-sports-1" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 } else if (playerType === "actualtwitch") {
                     container.innerHTML = '<iframe id="twitchPlayer" src="https://player.twitch.tv/?channel=' + stream + '&parent=mrgamingstreams.com" frameborder="0" allowfullscreen height="520" width="100%"></iframe>';
+                } else if (playerType === "transcode") {
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/transcoding/ppv" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 }
                 
                 
