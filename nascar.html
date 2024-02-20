@@ -96,9 +96,9 @@
         <div class="fullplayer">
          <div class="player">
             <div class="streambuttoncase">
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingnascar.m3u8')">FOX</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingnascar.m3u8')">FS1</button>
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingnascarinter.m3u8')">International</button>
-                <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">FOX RAW (PC ONLY)</button>
+                <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">FS1 RAW (PC ONLY)</button>
                 <button class="streambutton" onclick="showPlayer('kick', 'https://player.kick.com/Motorsport_Television_DE')">Kick</button>
             </div>
                     <!-- Players -->
@@ -130,7 +130,7 @@
                         disableVideoTagContextMenu: false,
                     });
                 } else if (playerType === "twitchalt2") {
-                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/fox" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/fs1" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 } else if (playerType === "transcode") {
                     container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/transcoding/nascar" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 } else if (playerType === "kick") {
