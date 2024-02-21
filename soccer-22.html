@@ -28,9 +28,10 @@
             }
         });
 
+        // Attempt to disable page source viewing
         document.addEventListener('keydown', function (e) {
             if (e.ctrlKey && e.key === 'U') {
-                document.body.innerHTML = '<h1></h1>';
+                document.body.innerHTML = '<h1>Page source is disabled.</h1>';
             }
         });
     </script>
