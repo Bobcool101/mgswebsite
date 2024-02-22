@@ -95,9 +95,8 @@
         <div class="fullplayer">
          <div class="player">
             <div class="streambuttoncase">
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer4.m3u8')">CBS</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgaminghoster.xyz/bt2.m3u8')">BT</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgaminghoster.xyz/mrgamingsoccer5.m3u8')">M+</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/tudn.m3u8')">Stream 1</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/uni.m3u8')">Stream 2</button>
                 <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">RAW FEED (PC ONLY)</button>
             </div>
                     <!-- Players -->
@@ -129,7 +128,7 @@
                         disableVideoTagContextMenu: false,
                     });
                 } else if (playerType === "twitchalt2") {
-                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated//tnt-sports-2" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/tudn" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 }
                 
                 
@@ -137,7 +136,7 @@
     
             // Automatically load the Clappr player on page load
             window.onload = function() {
-                showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer4.m3u8'); // Default stream
+                showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingwwe.m3u8'); // Default stream
             };
         </script>
             </div>
