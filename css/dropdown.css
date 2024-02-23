@@ -93,5 +93,5 @@ nav {
 
 input[type=checkbox]{display:none}
 input[type=checkbox]:checked + .menu-item ul {
-    height: 217px;
+    height: 247px;
 }
