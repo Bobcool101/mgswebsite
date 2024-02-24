@@ -9,6 +9,7 @@
         }
     </style>
     <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
       <script>
     // default options
     ConsoleBan.init()
@@ -56,31 +57,7 @@
         playerInstance.setup({
 	"playlist": [
 		{
-			"sources": [
-				null,
-				{
-					"default": false,
-					"type": "hls",
-					"file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_CTR-4s/Live/channel(2504190-205420-2470d5e1dec)/master.mpd",
-					"drm": {
-						"clearkey": {
-							"keyId": "0022cbbe20f81db391f5e59cfd5b2f37",
-							"key": "6776c4200a291fa1c469648dc3121690"
-						}
-					},
-					"label": "1"
-				},
-				{
-					"default": true,
-					"type": "hls",
-					"file": "https://g006-sle-us-cmaf-prd-ak.cdn.peacocktv.com/co01/Content/CMAF_CTR-4s/Live/channel(2504190-205420-2470d5e1dec)/master.mpd",
-					"drm": {
-						"widevine": {},
-						"playready": {}
-					},
-					"label": "2"
-				}
-			]
+			"file": "https://dice-live-us.cdnfastly.endeavorstreaming.net/1708854837_Js7vhu1DSPuoh33v_ccfe4916fab45e6ab05788ebda85388e0e2c06cb/id=5d9e8505-67cc-4f49-949c-7dc0c8af1030/data=dWlkPWFGd3p8YzI0YTQ1N2YtZWQ3ZC00Yzk5LTgwNTQtMjYyY2VkMmZjNjUyJmlwPTE3My4yNDQuNTUuMTAwJmV4cD0xNzA4ODU0ODUzJmVpZD0xMTE0NDkmY2lkPWRjZS53d2Umb2lkPTE1OA/~/hls/live/2001666/111449-264231/exchange111449fxkly_111449_spa/chunklist_ao-d.m3u8"
 		}
 	],
             width: "100%",
