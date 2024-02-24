@@ -97,8 +97,10 @@
         <div class="fullplayer">
          <div class="player">
             <div class="streambuttoncase">
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingwwe.m3u8')">Stream 1</button>
+                <button class="streambutton" onclick="showPlayer('transcode', '1')">FOX</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://247b.mrgamingstreams.com/mrgamingbtsport1.m3u8')">TNT Sports</button>
                 <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">RAW FEED (PC ONLY)</button>
+                <button class="streambutton" onclick="showPlayer('actualtwitch', 'sh4d0w0612')">TWITCH</button>
             </div>
                     <!-- Players -->
         <div class="player" id="playerContainer"></div>
@@ -129,7 +131,9 @@
                         disableVideoTagContextMenu: false,
                     });
                 } else if (playerType === "twitchalt2") {
-                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/axs" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/fox" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                } else if (playerType === "transcode") {
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/transcoding/wwe" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 } else if (playerType === "actualtwitch") {
                     container.innerHTML = '<iframe id="twitchPlayer" src="https://player.twitch.tv/?channel=' + stream + '&parent=mrgamingstreams.com" frameborder="0" allowfullscreen height="520" width="100%"></iframe>';
                 }
@@ -139,7 +143,7 @@
     
             // Automatically load the Clappr player on page load
             window.onload = function() {
-                showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingwwe.m3u8'); // Default stream
+                showPlayer('transcode', '1'); // Default stream
             };
         </script>
             </div>
