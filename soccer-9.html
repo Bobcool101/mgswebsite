@@ -17,12 +17,10 @@
     })
   </script>
     <script>
-        // Disable right-click
         document.addEventListener('contextmenu', function (e) {
             e.preventDefault();
         });
 
-        // Disable access to developer tools
         document.addEventListener('keydown', function (e) {
             if ((e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))) ||
                 (e.ctrlKey && e.shiftKey && e.key === 'J')) {
@@ -61,7 +59,6 @@
         </div>
         <div class="HeaderRight">
             <a class="headertxt" href="/soccer">Soccer</a>
-            <a class="headertxt" href="/mlb">MLB</a>
             <a class="headertxt" href="/nfl">NFL</a>
             <a class="headertxt" href="/nba">NBA</a>
             <a class="headertxt" href="/nhl">NHL</a>
@@ -76,7 +73,6 @@
               <label for="sida1"><a>Navigation</a></label>
               <ul>
                 <li><a href="/soccer">Soccer</a></li>
-                <li><a href="/mlb">MLB</a></li>
                 <li><a href="/nfl">NFL</a></li>
                 <li><a href="/nba">NBA</a></li>
                 <li><a href="/nhl">NHL</a></li>
@@ -97,7 +93,7 @@
         <div class="fullplayer">
             <div class="player">
                 <div class="streambuttoncase">
-                    <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer7.m3u8')">Stream 1</button>
+                    <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer9.m3u8')">Stream 1</button>
                 </div>
                 <!-- Players -->
                 <div class="player" id="playerContainer"></div>
@@ -128,7 +124,7 @@
     
                     // Automatically load the Clappr player on page load
                     window.onload = function() {
-                        showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingsoccer7.m3u8'); // Default stream
+                        showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer9.m3u8'); // Default stream
                     };
                 </script>
             </div>
