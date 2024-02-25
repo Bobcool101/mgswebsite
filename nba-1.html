@@ -61,6 +61,7 @@
         </div>
         <div class="HeaderRight">
             <a class="headertxt" href="/soccer">Soccer</a>
+            <a class="headertxt" href="/mlb">MLB</a>
             <a class="headertxt" href="/nfl">NFL</a>
             <a class="headertxt" href="/nba">NBA</a>
             <a class="headertxt" href="/nhl">NHL</a>
@@ -75,6 +76,7 @@
               <label for="sida1"><a>Navigation</a></label>
               <ul>
                 <li><a href="/soccer">Soccer</a></li>
+                <li><a href="/mlb">MLB</a></li>
                 <li><a href="/nfl">NFL</a></li>
                 <li><a href="/nba">NBA</a></li>
                 <li><a href="/nhl">NHL</a></li>
@@ -95,7 +97,7 @@
         <div class="fullplayer">
          <div class="player">
             <div class="streambuttoncase">
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingabc.m3u8')">Stream 1</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingnba3.m3u8')">Stream 1</button>
                 <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">RAW FEED (PC ONLY)</button>
             </div>
                     <!-- Players -->
@@ -127,7 +129,7 @@
                         disableVideoTagContextMenu: false,
                     });
                 } else if (playerType === "twitchalt2") {
-                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/abc" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/monumentalnet" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 }
                 
                 
@@ -135,7 +137,7 @@
     
             // Automatically load the Clappr player on page load
             window.onload = function() {
-                showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingabc.m3u8'); // Default stream
+                showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingnba3.m3u8'); // Default stream
             };
         </script>
             </div>
