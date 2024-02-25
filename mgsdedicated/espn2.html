@@ -17,6 +17,11 @@
     ConsoleBan.init({
       redirect: '/'
     })
+    document.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && e.key === 'u') {
+            e.preventDefault();
+        }
+    });
   </script>
     <script>
         // Disable right-click
