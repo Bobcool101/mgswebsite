@@ -1,0 +1,98 @@
+<html lang="en"> 
+<meta name="robots" content="noindex" /> 
+  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+  <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '/'
+    })
+  </script>
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable access to developer tools
+        document.addEventListener('keydown', function (e) {
+            if ((e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))) ||
+                (e.ctrlKey && e.shiftKey && e.key === 'J')) {
+                e.preventDefault();
+            }
+        });
+    document.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && e.key === 'u') {
+            e.preventDefault();
+        }
+    });
+    </script>
+<script src="//cdn.jsdelivr.net/npm/@clappr/player@0.4.0/dist/clappr.min.js"></script> 
+<script src="//cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script> 
+<script src='//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js'></script> 
+<script src='//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js'></script> 
+<script src='//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js'></script> 
+<script src='//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js'></script> 
+<script src="//cdn.jsdelivr.net/npm/shaka-player@2.5.10/dist/shaka-player.compiled.min.js"></script> 
+<script src="//cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.external.min.js"></script> 
+<script src="//cdn.jsdelivr.net/npm/cdnbye-shaka@latest"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+<style>  
+ 
+.player-poster[data-poster] { 
+  background-size: cover; 
+} 
+body{ 
+  margin:0; 
+  padding:0; 
+} 
+ 
+</style> 
+</head> 
+<div id="player"></div> 
+<script> 
+var player = new Clappr.Player({ 
+        source: 'https://gcp.live.na.prd.media.max.com/live/lo/use1/8fa27a7e-7339-4681-b44a-9ebf197815be-dash-6hdvr-cenc/master.mpd?f.audioCodec=heaac&f.audioTrack=en-US%7Cprogram&mfs.type=rundmc&r.duration=0.000000&r.host=https%3A%2F%2Fgcp.live.na.prd.media.max.com&r.keymod=2&r.main=0&r.manifest=live%2Flo%2Fuse1%2F8fa27a7e-7339-4681-b44a-9ebf197815be-dash-6hdvr-cenc%2Fmaster.mpd&r.origins=prd-wbd-amer-live-lss&rtype=mfs', 
+        mimeType: 'application/dash+xml', 
+        height: '100%', 
+        width: '100%', 
+        plugins: [LevelSelector, DashShakaPlayback, ChromecastPlugin, ClapprPip.PipButton, ClapprPip.PipPlugin, Clappr.MediaControl], 
+        events: {onReady: function() {var plugin = this.getPlugin('click_to_pause'); plugin && plugin.disable();},}, 
+        chromecast: { 
+            appId: '9DFB77C0', 
+            contentType: 'video/mp4', 
+        }, 
+        shakaConfiguration: { 
+            drm: { 
+            clearKeys: { 
+                    '0100df1ffe990635491c854760578ee0': '83eece2a57343558cde55bb0a64d4d10',
+                    '01013cd327ea6c6cd3127d8553cfe6c0': 'fda1af98b68ec21d180719b02dce9bf4', 
+                    '01020fae8d92f464f8fcbee8e1f0cb2d': 'a27af143bd30f2795827d6f473990052',
+                    '01033dd34db32ea6e197ee4a67a88246': '00000000000000000000000000000000',
+                    '0104dba208de54d8bf22db63c99a5c43': '00000000000000000000000000000000',
+                    '0105d5a1255501a7540d9408b71d7768': '00000000000000000000000000000000'
+                } 
+            }, 
+            preferredAudioLanguage: 'pt-BR', 
+        }, 
+        shakaOnBeforeLoad: function (shaka_player) {}, 
+        parentId: '#player' 
+    }); 
+</script>
+</noscript>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var isJavaScriptEnabled = true;
+
+        try {
+            var testElement = document.createElement('div');
+        } catch (e) {
+            isJavaScriptEnabled = false;
+        }
+
+        if (!isJavaScriptEnabled) {
+            window.location.href = 'https://mrgamingstreams.com';
+        }
+    });
+</script>
