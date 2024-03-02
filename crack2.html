@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8" />
+    <title>MrGamingStreams - Free Streams, Forever</title>
+    <meta name="description" content="The One And Only, Join The Discord: https://discord.gg/Rf2SFRtJFz">
+    <meta name="keywords" content="Streams, Sports Streams, NBA Streams, WWE Streams, F1 Streams, NFL Streams, Soccer Streams">
+    <meta name="viewport" content="width=device-width, initial-scale=.8">
+    <link rel="shortcut icon" type="x-icon" href="pics/logo.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
+    <script src="https://kit.fontawesome.com/5250930a26.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bitmovin-player@8/bitmovinplayer.js"></script>
+    <fonts>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    </fonts>
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/promobuttons.css" rel="stylesheet">
+    <link href="/css/dropdown.css" rel="stylesheet">
+    <link href="/css/layout.css" rel="stylesheet">
+    <link href="/css/player&buttons.css" rel="stylesheet">
+    <link href="/css/mobile.css" rel="stylesheet">
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <style>
+    .player-wrapper {
+      width: 90%;
+      margin: 20px auto;
+      box-shadow: 0 0 30px rgba(0,0,0,0.7);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="HeaderLeft">
+            <img class="logo" src=pics/logo.png style="width:50px;height:50px;border-radius: 30px;">
+            <a class="webtitle" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 30px; margin-top:15px; margin-bottom:15px;" href="/"> MrGamingStreams</a>
+            <a class="webtitlemobile" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 23px; margin-top:15px; margin-bottom:15px;" href="/"> MrGamingStreams</a>
+            <a class="tagline" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 150; font-style: italic; font-size: 20px; margin-top:15px; margin-bottom:15px;">Free Streams, Forever</a>
+        </div>
+        <div class="HeaderRight">
+            <a class="headertxt" href="/soccer">Soccer</a>
+            <a class="headertxt" href="/nfl">NFL</a>
+            <a class="headertxt" href="/nba">NBA</a>
+            <a class="headertxt" href="/nhl">NHL</a>
+            <a class="headertxt" href="/fighting">Fighting</a>
+            <a class="headertxt" href="/motorsports">Motorsports</a>
+            <a class="headertxt" href="/247-tv">24/7 TV</a>
+        </div>
+        <div class="HeaderRightMobile">
+           <nav>
+           <input id="sida1" type="checkbox">
+           <div class="menu-item alpha">
+              <label for="sida1"><a>Navigation</a></label>
+              <ul>
+                <li><a href="/soccer">Soccer</a></li>
+                <li><a href="/nfl">NFL</a></li>
+                <li><a href="/nba">NBA</a></li>
+                <li><a href="/nhl">NHL</a></li>
+                <li><a href="/fighting">Fighting</a></li>
+                <li><a href="/motorsports">Motorsports</a></li>
+                <li><a href="/247-tv">24/7 TV</a></li>
+              </ul>
+            </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="promobuttons">
+            <a href="https://discord.com/invite/Rf2SFRtJFz"><button class="followbuttons">Discord</button></a>
+            <a href="https://linktr.ee/mrgamingfollow"><button class="followbuttons" href="">Follow Us</button></a>
+            <a href="https://linktr.ee/mrgamingdonate"><button class="followbuttons" href="">Donate</button></a>
+        </div>
+        <div class="fullplayer">
+         <div class="player">
+            <div class="player-wrapper">
+                <div id="player"></div>
+              </div>
+              
+              <script type="text/javascript">
+                var conf = {
+                  key: '594cb96a-05c8-4c61-b1a8-2155d7f598f4',
+                  analytics: {
+                    key: 'db165537-961e-470d-b2cc-68abfc874eba',
+                    title: 'Art of Motion',
+                    videoId: 'wizard-Art_of_Motion-1705765247999',
+                  },
+                };
+              
+                var source = {
+                    dash: "https://dcb-fs-live-dazn-cdn.dazn.com/1gfxuwfvgyce31bou2ksfsu9me/web/stream.mpd?channel=3402&outlet=dazn-us&plang=en&dazn-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MDk0NTk4NTQsImtpZCI6IjIwMjIxMTIzIiwicGF0aF9kIjoxLCJwYXRoIjoiN2VhNzI2NmUwNzM0NDgzMDRkYjBlOWVkOTg5MDk3ZGU2NWZhYmZhMCIsInNzaWQiOiJkNDc4ZDlhNi05ZWM5LTRjZDMtYTUwNS02Y2U0OTQ2NjI3MzEiLCJnZW8iOiJ1cyIsInVhIjoiYmI4OGRmNDQyNjRmMjFiZWI3NjM2YmJhMDZlZDBhN2FjNGQ4ZDQ3NyIsIndtaWQiOiJ6UFJFLTJhLU1FbkZYOFhMa2pJWnVoVm1RaWpnc21OT2JhSk01MVJUa1Q5NVFkMDVTcjZMZjJNMmFQeVRKOE9NIiwiaWF0IjoxNzA5NDE2NjU0fQ.6Z3AhgzXSUpbzZtTVIzVwxBNejEQEN2-kLP7ESnmo80",
+                    drm: {
+                        widevine: {
+                        LA_URL: "https://drm.gateway.indazn.com/widevine/v1/license?legacyContentId=prod-live1&contentId=1gfxuwfvgyce31bou2ksfsu9me&platform=web&manufacturer=unknown&model=N%2FA&appVersion=9.40.0-hotfix.4.894&uid=261fdbb4-5c63-43ff-a229-87985a464220&accountStatus=ActivePaid&assetId=6r070w5ptyke1w9mkmfokc08o&aexp=1709426700000&tid=d478d9a6-9ec9-4cd3-a505-6ce494662731&uexp=1709503054538&mediaType=live&mediaId=1gfxuwfvgyce31bou2ksfsu9me&metadata=country%3Dus&hash=59bba1e65b25e81bb288c4fd54c08a7d72c9944bb28d97240e0d47e229acd7ce",
+                        headers: {
+                            "authorization": "Bearer eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6IjJXZlVweldreUxEcS1aOXkyRG1Yb0VwNXM3SHBYd3FnZGluallsS3c5NWsifQ.eyJ1c2VyIjoiMjYxZmRiYjQtNWM2My00M2ZmLWEyMjktODc5ODVhNDY0MjIwIiwiaXNzdWVkIjoxNzA5NDE0NDY3LCJ1c2Vyc3RhdHVzIjoiQWN0aXZlUGFpZCIsInNvdXJjZVR5cGUiOiIiLCJwcm9kdWN0U3RhdHVzIjp7IkRBWk4iOiJBY3RpdmVQYWlkIiwiTkZMIjoiUGFydGlhbCJ9LCJ2aWV3ZXJJZCI6Ijg3OTg1YTQ2NDIyMCIsImNvdW50cnkiOiJ1cyIsImNvbnRlbnRDb3VudHJ5IjoidXMiLCJpc1B1cmNoYXNhYmxlIjpmYWxzZSwiaG9tZUNvdW50cnkiOiJnYiIsInVzZXJUeXBlIjozLCJkZXZpY2VJZCI6IjI2MWZkYmI0LTVjNjMtNDNmZi1hMjI5LTg3OTg1YTQ2NDIyMC0wMDI2ZWQ5NjlmIiwiaXNEZXZpY2VQbGF5YWJsZSI6dHJ1ZSwicGxheWFibGVFbGlnaWJpbGl0eVN0YXR1cyI6IlBMQVlBQkxFIiwiY2FucmVkZWVtZ2MiOiJFbmFibGVkIiwianRpIjoiYTcwYTEzZjktYmIwNS00OWZmLWEwZTAtNzg2OWFhYTI2ODlkIiwiaWRwVHlwZSI6ImlkcC1wYXNzd29yZCIsInByb3ZpZGVyTmFtZSI6ImRhem4iLCJwcm92aWRlckN1c3RvbWVySWQiOiJkYTA1NWJlZS1lMDBlLTRiYzItOWQyMy1hZWI3ZjhkNWM0OGIiLCJlbnRpdGxlbWVudHMiOnsiZW50aXRsZW1lbnRTZXRzIjpbeyJpZCI6ImJhc2VfZW50X3NldCIsInByb2R1Y3RUeXBlIjoidGllciIsImVudGl0bGVtZW50cyI6WyJiYXNlX2Rhem5fY29udGVudCIsImVudGl0bGVtZW50X2FsbG93X3dhdGNoX2NvbmN1cnJlbmN5IiwiZW50aXRsZW1lbnRfbXVsdGlwbGVfZGV2aWNlc185OTkiXX1dLCJmZWF0dXJlcyI6eyJERVZJQ0UiOnsiYWNjZXNzX2RldmljZSI6ImFueSIsIm1heF9yZWdpc3RlcmVkX2RldmljZXMiOjk5OX0sIkNPTkNVUlJFTkNZIjp7Im1heF9kZXZpY2VzIjoyfX19LCJsaW5rZWRTb2NpYWxQYXJ0bmVycyI6W10sImV4cCI6MTcwOTQyMTY2NywiaXNzIjoiaHR0cHM6Ly9hdXRoLmFyLmluZGF6bi5jb20ifQ.dCd51Wb1fFvcFie7WUWWK0rbg5lVLhh7s_TsU19ewamtAUVPkoDbOJP3s4L9XLGKShdo8rtPGi5ebPEzlxJtAZ7BdMMqFQkKkhbwxvogUrraLKcIN-ta4s141Ywvvm6I5YhK8GG7I9TEoBajAsq12gv2h4YREcwH00h6UUUfuNZZHKWTETVOuPK47SZdjChDNfiX-M8jWzssnVTDL1LzlliVKKBVJktS-c2lHUwhgtgYDTp0v1UBkO01hOrdNG8Wm6Uq8d7fL5ucNuWHBl9HTO4QRZ-Em1ECDYXv2Dz-hj6-UGhgOWDw1vtBQVqRDtm4XV2oqRTXV2W-lC84oA27GA",
+                            "content-type": "application/octet-stream",
+                            "x-session-id": "012c0d97-2768-40a9-a4ba-e31b5095ddb5"
+                        },
+                        audioRobustness: "SW_SECURE_CRYPTO",
+                        events: {
+                            onReady: () => {
+                            this.addEventHandler("onPlay", seekHLS);
+                            },
+                        },
+                        }
+                    }
+                    };
+              
+                var player = new bitmovin.player.Player(document.getElementById('player'), conf);
+                player.load(source);
+              </script>
+         </div>
+     </div>
+    </main>
+    <footer class="footerformat">
+        <a href="/"><p style="color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-style: italic; font-size: 20px;">MrGamingStreams</p></a>
+    </footer>
+</body>
+</html>
