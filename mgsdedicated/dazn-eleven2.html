@@ -10,7 +10,7 @@
     </style>
     <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
-              <script>
+      <script>
     // default options
     ConsoleBan.init()
     // custom options
@@ -60,34 +60,17 @@
         var playerInstance = jwplayer("player");
 
         playerInstance.setup({
-	"playlist": [
-		{
-			"sources": [
-				{
-					"default": false,
-					"type": "mpd",
-					"file": "https://dcf-ak-livedazn.akamaized.net/dashrdm/dazn-linear-055/stream.mpd",
-					"drm": {
-						"clearkey": {
-							"key": "1b144f73e6fefe91cd05f850e2b589d0",
-							"keyId": "82f8e2a17dac44c0a18f660479349c59"
-						}
-					},
-					"label": "1"
-				},
-				{
-					"default": true,
-					"type": "mpd",
-					"file": "https://dcf-ak-livedazn.akamaized.net/dashrdm/dazn-linear-055/stream.mpd",
-					"drm": {
-						"widevine": {},
-						"playready": {}
-					},
-					"label": "2"
-				}
-			]
-		}
-	],
+            playlist: [{
+                "image": atob(getIMG),
+                "sources": [
+                    {
+                        "default": false,
+                        "type": "hls",
+                        "file": "https://da-d50d12b5.online.meo.pt/wp/cdn-er-vspp-cvl2.online.meo.pt/shls/LIVE$Eleven_Sports_2_HD/index.m3u8/S!d2EISU9TX0xpdmUSBkPIS1XDVP7...8BFgyf/Level(1200000)",
+                        "label": "0"
+                    }
+                ]
+            }],
             width: "100%",
             height: "100%",
             aspectratio: "16:9",
@@ -96,9 +79,6 @@
             sharing: {}
         });
     </script>
-<script>
-  window.user.key = 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoyNDkyNDcsInBhc3MiOjEzMjYsInZpZGVvIjoyNDk1Niwic2Vzc2lvbiI6MTh9.lPf96fa3CYxvK4vqoeotF911JK3O1AERx-la0HbCv8k';
-</script>
 <noscript>
     <meta http-equiv="refresh" content="0;url=https://mrgamingstreams.com">
 </noscript>
