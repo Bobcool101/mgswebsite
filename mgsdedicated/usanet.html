@@ -19,7 +19,6 @@
     })
   </script>
     <script>
-        // Disable right-click
         document.addEventListener('contextmenu', function (e) {
             e.preventDefault();
         });
@@ -60,35 +59,35 @@
         var playerInstance = jwplayer("player");
 
         playerInstance.setup({
-	"playlist": [
-		{
-			"sources": [
-				null,
-				{
-					"default": true,
-					"type": "hls",
-					"file": "https://dfwlive-v1-c4p3-sponsored.akamaized.net/Content/HLS.cps/Live/channel(USAHD-1327.dfw.1080)/index.m3u8",
-					"drm": {
-						"clearkey": {
-							"keyId": "372adbbc2f7a84379d4af2a0350ca190",
-							"key": "37922201fbe77e02e24a590c7c8b443b"
-						}
-					},
-					"label": "1"
-				},
-				{
-					"default": true,
-					"type": "hls",
-					"file": "https://dfwlive-v1-c4p3-sponsored.akamaized.net/Content/HLS.cps/Live/channel(USAHD-1327.dfw.1080)/index.m3u8",
-					"drm": {
-						"widevine": {},
-						"playready": {}
-					},
-					"label": "2"
-				}
-			]
-		}
-	],
+            "playlist": [
+                {
+                    "sources": [
+                        null,
+                        {
+                            "default": true,
+                            "type": "hls",
+                            "file": "https://dfwlive-v1-c4p3-sponsored.akamaized.net/Content/HLS.cps/Live/channel(USAHD-1327.dfw.1080)/index.m3u8",
+                            "drm": {
+                                "clearkey": {
+                                    "keyId": "372adbbc2f7a84379d4af2a0350ca190",
+                                    "key": "37922201fbe77e02e24a590c7c8b443b"
+                                }
+                            },
+                            "label": "1"
+                        },
+                        {
+                            "default": false,
+                            "type": "hls",
+                            "file": "https://dfwlive-v1-c4p3-sponsored.akamaized.net/Content/HLS.cps/Live/channel(USAHD-1327.dfw.1080)/index.m3u8",
+                            "drm": {
+                                "widevine": {},
+                                "playready": {}
+                            },
+                            "label": "2"
+                        }
+                    ]
+                }
+            ],
             width: "100%",
             height: "100%",
             aspectratio: "16:9",
