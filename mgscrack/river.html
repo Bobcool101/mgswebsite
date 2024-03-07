@@ -9,29 +9,6 @@
         }
     </style>
     <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
-      <script>
-    // default options
-    ConsoleBan.init()
-    // custom options
-    ConsoleBan.init({
-      redirect: '/'
-    })
-  </script>
-    <script>
-        // Disable right-click
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-        });
-
-        // Disable access to developer tools
-        document.addEventListener('keydown', function (e) {
-            if ((e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))) ||
-                (e.ctrlKey && e.shiftKey && e.key === 'J')) {
-                e.preventDefault();
-            }
-        });
-    </script>
     <script>
         jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
     </script>
@@ -57,7 +34,31 @@
         playerInstance.setup({
 	"playlist": [
 		{
-			"file": "https://dice-live-us.cdnfastly.endeavorstreaming.net/1708855202_SrpUWPG5nz4GJovV_373d8a72b026ab4c9c31673e9e1350bf8d96bb32/id=3161326b-b0ac-4195-a387-2b1c4d297fbb/data=dWlkPWFGd3p8YzI0YTQ1N2YtZWQ3ZC00Yzk5LTgwNTQtMjYyY2VkMmZjNjUyJmlwPTE3My4yNDQuNTUuMTAxJmV4cD0xNzA4ODU1MjEyJmVpZD0xMTE0NDkmY2lkPWRjZS53d2Umb2lkPTE1OA/~/hls/live/2001666/111449-264231/playlist-d.m3u8"
+			"sources": [
+				null,
+				{
+					"default": false,
+					"type": "hls",
+					"file": "https://live-ftc-na-south-2.media.starott.com/gru1/qb01/starplus/event/2024/03/07/River_Plate_vs_Independie_20240307_1709764913547/ctr-all-complete.m3u8",
+					"drm": {
+						"clearkey": {
+							"keyId": "b6afcac4b9b24534b431d89db62b1a18",
+							"key": "331d0343488dd8ffc089f1f8d4e5b851"
+						}
+					},
+					"label": "1"
+				},
+				{
+					"default": true,
+					"type": "hls",
+					"file": "https://live-ftc-na-south-2.media.starott.com/gru1/qb01/starplus/event/2024/03/07/River_Plate_vs_Independie_20240307_1709764913547/ctr-all-complete.m3u8",
+					"drm": {
+						"widevine": {},
+						"playready": {}
+					},
+					"label": "2"
+				}
+			]
 		}
 	],
             width: "100%",
@@ -71,23 +72,6 @@
 <script>
   window.user.key = 'eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoyNDkyNDcsInBhc3MiOjEzMjYsInZpZGVvIjoyNDk1Niwic2Vzc2lvbiI6MTh9.lPf96fa3CYxvK4vqoeotF911JK3O1AERx-la0HbCv8k';
 </script>
-<noscript>
-    <meta http-equiv="refresh" content="0;url=https://mrgamingstreams.com">
-</noscript>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var isJavaScriptEnabled = true;
-
-        try {
-            var testElement = document.createElement('div');
-        } catch (e) {
-            isJavaScriptEnabled = false;
-        }
-
-        if (!isJavaScriptEnabled) {
-            window.location.href = 'https://mrgamingstreams.com';
-        }
-    });
-</script>
+<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 </body>
 </html>
