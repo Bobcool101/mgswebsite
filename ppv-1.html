@@ -95,8 +95,9 @@
         <div class="fullplayer">
          <div class="player">
             <div class="streambuttoncase">
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgaminghoster.xyz/mrgamingppv.m3u8')">Stream 1</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/prem.m3u8')">Stream 2 (ES)</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgaminghoster.xyz/mrgamingppv.m3u8')">ESPN+</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgaminghoster.xyz/mrgamingppv.m3u8')">ESPN+ (ALT)</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/prem.m3u8')">Spanish</button>
                 <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">RAW FEED (PC ONLY)</button>
                 <button class="streambutton" onclick="showPlayer('actualtwitch', 'koroshi43')">Twitch</button>
             </div>
@@ -130,6 +131,8 @@
                     });
                 } else if (playerType === "twitchalt2") {
                     container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/tnt-sports-2" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                } else if (playerType === "transcode") {
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/transcoding/ppv" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 } else if (playerType === "actualtwitch") {
                     container.innerHTML = '<iframe id="twitchPlayer" src="https://player.twitch.tv/?channel=' + stream + '&parent=mrgamingstreams.com" frameborder="0" allowfullscreen height="520" width="100%"></iframe>';
                 }
