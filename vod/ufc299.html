@@ -7,6 +7,29 @@
     <meta name="keywords" content="Streams, Sports Streams, NBA Streams, WWE Streams, F1 Streams, NFL Streams, Soccer Streams">
     <meta name="viewport" content="width=device-width, initial-scale=.8">
     <link rel="shortcut icon" type="x-icon" href="pics/logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+  <script>
+    // default options
+    ConsoleBan.init()
+    // custom options
+    ConsoleBan.init({
+      redirect: '/'
+    })
+  </script>
+    <script>
+        // Disable right-click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable access to developer tools
+        document.addEventListener('keydown', function (e) {
+            if ((e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))) ||
+                (e.ctrlKey && e.shiftKey && e.key === 'J')) {
+                e.preventDefault();
+            }
+        });
+    </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
     <script src="https://kit.fontawesome.com/5250930a26.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -23,7 +46,7 @@
     <link href="/css/layout.css" rel="stylesheet">
     <link href="/css/player&buttons.css" rel="stylesheet">
     <link href="/css/mobile.css" rel="stylesheet">
-    <link href="/css/schedule.css" rel="stylesheet">
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8DB3G2HXM"></script>
     <script>
@@ -34,85 +57,19 @@
     gtag('config', 'G-F8DB3G2HXM');
     </script>
     <style>
-        .scheduleTableformat {
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 800px;
-        }
-        .scheduleTableformat2 {
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 1200px;
-            margin-top: 30px;
-            gap: 1em;
-        }
-        .image-container {
-        position: relative;
-        display: inline-block;  
-        max-width: 300px;      
-        }
 
-        .image-container:hover {
-        position: relative;
-        display: inline-block;   
-        filter: drop-shadow(8px 8px 30px rgb(0, 0, 0));     
-        }
-
-        .image-container img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 50px;
-        filter:opacity(70%);
-        transition: all 500ms;
-        }
-        .image-container:hover img {
-        filter: blur(8px);
-        transition: all 500ms;
-        filter:opacity(40%);
-        }
-
-        .overlay-text {
-        position: absolute;
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        background-color: #1b2d42ce; 
-        color: #fff; 
-        padding: 8px 5px; 
-        font-size: 20px; 
-        text-align: center;
-        }
-        .scheduleheader {
-        display: flex;
-        justify-content: center;
-        font-size: 2.5rem;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 500;
-        letter-spacing: 1.2px;
-        border-color: #2850a7;
-        color: white;
-        }
     </style>
 </head>
 <body>
     <header>
         <div class="HeaderLeft">
-            <img class="logo" src=pics/logo.png style="width:50px;height:50px;border-radius: 30px;">
+            <img class="logo" src=https://mrgamingstreams.com/pics/logo.png style="width:50px;height:50px;border-radius: 30px;">
             <a class="webtitle" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 30px; margin-top:15px; margin-bottom:15px;" href="/"> MrGamingStreams</a>
             <a class="webtitlemobile" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 23px; margin-top:15px; margin-bottom:15px;" href="/"> MrGamingStreams</a>
             <a class="tagline" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 150; font-style: italic; font-size: 20px; margin-top:15px; margin-bottom:15px;">Free Streams, Forever</a>
-            <script id="cid0020000367563933714" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 1px;height: 1px;">{"handle":"mrgamingstreams1","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100}}</script>
         </div>
         <div class="HeaderRight">
             <a class="headertxt" href="/soccer">Soccer</a>
-            <a class="headertxt" href="/mlb">MLB</a>
             <a class="headertxt" href="/nfl">NFL</a>
             <a class="headertxt" href="/nba">NBA</a>
             <a class="headertxt" href="/nhl">NHL</a>
@@ -127,7 +84,6 @@
               <label for="sida1"><a>Navigation</a></label>
               <ul>
                 <li><a href="/soccer">Soccer</a></li>
-                <li><a href="/mlb">MLB</a></li>
                 <li><a href="/nfl">NFL</a></li>
                 <li><a href="/nba">NBA</a></li>
                 <li><a href="/nhl">NHL</a></li>
@@ -145,38 +101,76 @@
             <a href="https://linktr.ee/mrgamingfollow"><button class="followbuttons" href="">Follow Us</button></a>
             <a href="https://linktr.ee/mrgamingdonate"><button class="followbuttons" href="">Donate</button></a>
         </div>
-        <div class="scheduleheader">
-            <p>VODS</p>
-        </div>
-        <div class="scheduleTableformat">
-        <!--<button class="followbuttons">Fighting</button>
-            <button class="followbuttons">Other</button> -->
-        </div>
-        <div class="scheduleTableformat2">
-            <a href="/vod/ufc299"><div class="image-container">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/UFC_299_poster.jpg" alt="image">
-                <div class="overlay-text">UFC 299</div>
-            </div></a>
-            <a href="/vod/aewrev2024"><div class="image-container">
-                <img src="https://images.immediate.co.uk/production/volatile/sites/3/2024/02/AEW-Revolution-TV-782d011.jpg?quality=90&resize=980,654" alt="image">
-                <div class="overlay-text">AEW Revolution 2024</div>
-            </div></a>
-            <a href="https://ok.ru/videoembed/7025670818475"><div class="image-container">
-                <img src="https://image.discovery.indazn.com/ca/v2/ca/image?id=2ncdlags3lev1ski8n2arufc1_image-header_pUs_1703191394000" alt="image">
-                <div class="overlay-text">Serrano Vs. Meinke</div>
-            </div></a>
-            <a href="https://ok.ru/videoembed/7002952764075"><div class="image-container">
-                <img src="https://www.usatoday.com/gcdn/authoring/authoring-images/2024/02/09/USAT/72542233007-elimination-chamber-21024.jpg" alt="image">
-                <div class="overlay-text">Elimination Chamber 2024</div>
-            </div></a>
-            <a href="https://ok.ru/videoembed/7003305151147"><div class="image-container">
-                <img src="https://preview.redd.it/kott10-megathread-v0-zonv8xjwhpjc1.jpg?width=573&format=pjpg&auto=webp&s=b6f74c27b1263cea29576840bd2e3528ca917154" alt="image">
-                <div class="overlay-text">KOTT 10</div>
-            </div></a>
+        <div class="fullplayer">
+         <div class="player">
+            <div class="streambuttoncase">
+            </div>
+                    <!-- Players -->
+        <div class="player" id="playerContainer"></div>
+
+        <!-- JavaScript to control the visibility of video elements -->
+        <script>
+            var clapprPlayer;
+            var twitchPlayer;
+            var activePlayer;
+    
+            function showPlayer(playerType, stream) {
+                if (activePlayer === "twitch" && twitchPlayer) {
+                    twitchPlayer.pause();
+                } else if (activePlayer === "clappr" && clapprPlayer) {
+                    clapprPlayer.stop();
+                }
+    
+                activePlayer = playerType;
+                var container = document.getElementById("playerContainer");
+    
+                if (playerType === "clappr") {
+                    container.innerHTML = ""; // Clear container
+                    clapprPlayer = new Clappr.Player({
+                        source: stream,
+                        parentId: "#playerContainer",
+                        height: 520,
+                        width: "100%",
+                        disableVideoTagContextMenu: false,
+                    });
+                } else if (playerType === "twitch") {
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/vodvideos/ufc299" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                }
+                
+                
+            }
+    
+            // Automatically load the Clappr player on page load
+            window.onload = function() {
+                showPlayer('twitch', '11'); // Default stream
+            };
+        </script>
+            </div>
+            <div class="embedchat">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/live_chat?v=iXVkrL8Q1gY&amp;embed_domain=mrgamingstreams.com"></iframe>
+            </div>
         </div>
     </main>
     <footer class="footerformat">
         <a href="/"><p style="color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-style: italic; font-size: 20px;">MrGamingStreams</p></a>
     </footer>
+<noscript>
+    <meta http-equiv="refresh" content="0;url=https://mrgamingstreams.com">
+</noscript>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var isJavaScriptEnabled = true;
+
+        try {
+            var testElement = document.createElement('div');
+        } catch (e) {
+            isJavaScriptEnabled = false;
+        }
+
+        if (!isJavaScriptEnabled) {
+            window.location.href = 'https://mrgamingstreams.com';
+        }
+    });
+</script>
 </body>
 </html>
