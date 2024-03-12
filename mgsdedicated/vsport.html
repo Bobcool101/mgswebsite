@@ -9,7 +9,7 @@
         }
     </style>
     <script src="//ssl.p.jwpcdn.com/player/v/8.26.0/jwplayer.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
       <script>
     // default options
     ConsoleBan.init()
@@ -19,7 +19,6 @@
     })
   </script>
     <script>
-        // Disable right-click
         document.addEventListener('contextmenu', function (e) {
             e.preventDefault();
         });
@@ -60,43 +59,35 @@
         var playerInstance = jwplayer("player");
 
         playerInstance.setup({
-	"playlist": [
-		{
-			"sources": [
-				{
-					"default": false,
-					"type": "hls",
-					"file": "https://live-ctv.video.9c9media.com/f/TSN/TSN1/manifest.mpd",
-					"drm": {
-						"fairplay": {}
-					},
-					"label": "0"
-				},
-				{
-					"default": false,
-					"type": "mpd",
-					"file": "https://live-ctv.video.9c9media.com/f/TSN/TSN5/manifest.mpd",
-					"drm": {
-						"clearkey": {
-							"key": "cc23ea1fb32629f9e1f48c8deeae3e5b",
-							"keyId": "2b21c8fa9a329cce311a4c4a4aa996a1"
-						}
-					},
-					"label": "1"
-				},
-				{
-					"default": true,
-					"type": "mpd",
-					"file": "https://edge-live11-hr.cvattv.com.ar/live/c7eds/TyCSport/SA_Live_dash_enc/TyCSport.mpd",
-					"drm": {
-						"widevine": {},
-						"playready": {}
-					},
-					"label": "2"
-				}
-			]
-		}
-	],
+            "playlist": [
+                {
+                    "sources": [
+                        null,
+                        {
+                            "default": true,
+                            "type": "hls",
+                            "file": "https://live-aws-scalstrm-cdn.rikstv.no/live/rikstv/644bb6e91dbc891fd422efc9/manifest.mpd",
+                            "drm": {
+                                "clearkey": {
+                                    "keyId": "4d808f2b9a74536cadbd95be141888ed",
+                                    "key": "9dd89f67b8885dc65721a8b1fbeae700"
+                                }
+                            },
+                            "label": "1"
+                        },
+                        {
+                            "default": false,
+                            "type": "hls",
+                            "file": "https://live-aws-scalstrm-cdn.rikstv.no/live/rikstv/644bb6e91dbc891fd422efc9/manifest.mpd",
+                            "drm": {
+                                "widevine": {},
+                                "playready": {}
+                            },
+                            "label": "2"
+                        }
+                    ]
+                }
+            ],
             width: "100%",
             height: "100%",
             aspectratio: "16:9",
