@@ -96,6 +96,7 @@
          <div class="player">
             <div class="streambuttoncase">
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer2.m3u8')">CBS</button>
+                <button class="streambutton" onclick="showPlayer('transcode', '1')">CBS (ALT)</button>
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/bt.m3u8')">TNT</button>
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/two.m3u8')">TWO</button>
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer4.m3u8')">M+</button>
@@ -129,8 +130,8 @@
                         width: "100%",
                         disableVideoTagContextMenu: false,
                     });
-                } else if (playerType === "twitchalt2") {
-                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/bein-sports-th3" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                } else if (playerType === "transcode") {
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/transcoding/soccer-2" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 }
                 
                 
