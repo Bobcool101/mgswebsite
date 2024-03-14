@@ -96,10 +96,10 @@
          <div class="player">
             <div class="streambuttoncase">
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/fs2.m3u8')">FS2</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/astro.m3u8')">Astro</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/vix.m3u8')">VIX+</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/movistar.m3u8')">Movistar</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/vix.m3u8')">TUDN</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/vix.m3u8')">FOX Sports</button>
                 <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">FS2 RAW</button>
+                <button class="streambutton" onclick="showPlayer('twitchalt22', 'ketapasando')">TUDN RAW</button>
             </div>
                     <!-- Players -->
         <div class="player" id="playerContainer"></div>
@@ -131,6 +131,8 @@
                     });
                 } else if (playerType === "twitchalt2") {
                     container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/fs2" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                } else if (playerType === "twitchalt2") {
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/tudn" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 }
                 
                 
