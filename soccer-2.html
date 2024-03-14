@@ -95,11 +95,7 @@
         <div class="fullplayer">
          <div class="player">
             <div class="streambuttoncase">
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer2.m3u8')">CBS</button>
-                <button class="streambutton" onclick="showPlayer('transcode', '1')">CBS (ALT)</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/bt.m3u8')">TNT</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/two.m3u8')">TWO</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer4.m3u8')">M+</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/river.m3u8')">Stream 1</button>
                 <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">RAW FEED (PC ONLY)</button>
             </div>
                     <!-- Players -->
@@ -130,8 +126,8 @@
                         width: "100%",
                         disableVideoTagContextMenu: false,
                     });
-                } else if (playerType === "transcode") {
-                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/transcoding/soccer-2" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                } else if (playerType === "twitchalt2") {
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/river" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 }
                 
                 
@@ -139,7 +135,7 @@
     
             // Automatically load the Clappr player on page load
             window.onload = function() {
-                showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingsoccer2.m3u8'); // Default stream
+                showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/river.m3u8'); // Default stream
             };
         </script>
             </div>
