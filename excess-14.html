@@ -1,167 +1,53 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>MrGamingStreams - Free Streams, Forever</title>
-    <meta name="description" content="The One And Only, Join The Discord: https://discord.gg/Rf2SFRtJFz">
-    <meta name="keywords" content="Streams, Sports Streams, NBA Streams, WWE Streams, F1 Streams, NFL Streams, Soccer Streams">
-    <meta name="viewport" content="width=device-width, initial-scale=.8">
-    <link rel="shortcut icon" type="x-icon" href="pics/logo.png">
-  <script src="https://cdn.jsdelivr.net/npm/console-ban@4.1.0/dist/console-ban.min.js"></script>
-  <script>
-    // default options
-    ConsoleBan.init()
-    // custom options
-    ConsoleBan.init({
-      redirect: '/'
-    })
-  </script>
-    <script>
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-        });
-
-        document.addEventListener('keydown', function (e) {
-            if ((e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))) ||
-                (e.ctrlKey && e.shiftKey && e.key === 'J')) {
-                e.preventDefault();
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>JW-V2; API MLB TV . DUMPER</title>
+        <script src="https://ssl.p.jwpcdn.com/player/v/8.25.2/jwplayer.js" type="text/javascript"></script>
+        <script type="text/javascript" src="https://dumper-true.com/z-8190738"></script>
+        <script type="text/javascript">
+            jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";
+        </script>
+        <style>
+            .player-poster[data-poster] {
+                background-size: cover;
             }
-        });
-    </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@clappr/player@latest/dist/clappr.min.js"></script>
-    <script src="https://kit.fontawesome.com/5250930a26.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <fonts>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://rsms.me/">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    </fonts>
-    <link href="/css/header.css" rel="stylesheet">
-    <link href="/css/promobuttons.css" rel="stylesheet">
-    <link href="/css/dropdown.css" rel="stylesheet">
-    <link href="/css/layout.css" rel="stylesheet">
-    <link href="/css/player&buttons.css" rel="stylesheet">
-    <link href="/css/mobile.css" rel="stylesheet">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8DB3G2HXM"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'G-F8DB3G2HXM');
-    </script>
-    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-    <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="player"></div>
+        <script type="text/javascript">
+            jwplayer("player").setup({
+                playlist: [{
+                    title: "Libre Futbol TV",
+                    description: "Mira MLB TV De Forma Gratuita",
+                    image: "https://midfield.mlbstatic.com/v1/teams-matchup/140-133/ar_16:9/1280",
+                    file: "https://hlslive-akc-ewr1.media.mlb.com/hdnts=exp=1710994207~acl=/*/2024/03/19/Home_VIDEO_eng_Oakland_Athletics_Texas_R_20240319_1710871551097/*~id=00u8eb79fwmcso61d356~data=51c352aa-81ba-406b-a408-fa5f3709ca58~hmac=7a0ad4eeee3802bca7a163c9c116015d3a717905d8d9bed80d3123965424a176/a055fa197a265ef269a6da79730d4eb9/va01/mlb/2024/03/19/Home_VIDEO_eng_Oakland_Athletics_Texas_R_20240319_1710871551097/master_desktop_complete_gdfp2-trimmed.m3u8"
+                }],
+                width: "100%",
+                height: "100%",
+                aspectratio: "16:9",
 
-    </style>
-</head>
-<body>
-    <header>
-        <div class="HeaderLeft">
-            <img class="logo" src=pics/logo.png style="width:50px;height:50px;border-radius: 30px;">
-            <a class="webtitle" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 30px; margin-top:15px; margin-bottom:15px;" href="/"> MrGamingStreams</a>
-            <a class="webtitlemobile" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 23px; margin-top:15px; margin-bottom:15px;" href="/"> MrGamingStreams</a>
-            <a class="tagline" style="color: aliceblue; font-family: 'Poppins', sans-serif; font-weight: 150; font-style: italic; font-size: 20px; margin-top:15px; margin-bottom:15px;">Free Streams, Forever</a>
-        </div>
-        <div class="HeaderRight">
-            <a class="headertxt" href="/soccer">Soccer</a>
-            <a class="headertxt" href="/nfl">NFL</a>
-            <a class="headertxt" href="/nba">NBA</a>
-            <a class="headertxt" href="/nhl">NHL</a>
-            <a class="headertxt" href="/fighting">Fighting</a>
-            <a class="headertxt" href="/motorsports">Motorsports</a>
-            <a class="headertxt" href="/247-tv">24/7 TV</a>
-        </div>
-        <div class="HeaderRightMobile">
-           <nav>
-           <input id="sida1" type="checkbox">
-           <div class="menu-item alpha">
-              <label for="sida1"><a>Navigation</a></label>
-              <ul>
-                <li><a href="/soccer">Soccer</a></li>
-                <li><a href="/nfl">NFL</a></li>
-                <li><a href="/nba">NBA</a></li>
-                <li><a href="/nhl">NHL</a></li>
-                <li><a href="/fighting">Fighting</a></li>
-                <li><a href="/motorsports">Motorsports</a></li>
-                <li><a href="/247-tv">24/7 TV</a></li>
-              </ul>
-            </div>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="promobuttons">
-            <a href="https://discord.com/invite/Rf2SFRtJFz"><button class="followbuttons">Discord</button></a>
-            <a href="https://linktr.ee/mrgamingfollow"><button class="followbuttons" href="">Follow Us</button></a>
-            <a href="https://linktr.ee/mrgamingdonate"><button class="followbuttons" href="">Donate</button></a>
-        </div>
-        <div class="fullplayer">
-            <div class="player">
-                <div class="streambuttoncase">
-                    <button class="streambutton" onclick="showPlayer('clappr', 'https://bp3.mrgamingstreams.com/mrgamingnba4.m3u8')">Stream 1</button>
-                </div>
-                <!-- Players -->
-                <div class="player" id="playerContainer"></div>
-                <!-- JavaScript to control the visibility of video elements -->
-                <script>
-                    var clapprPlayer;
-                    var activePlayer;
-    
-                    function showPlayer(playerType, stream) {
-                        if (activePlayer === "clappr" && clapprPlayer) {
-                            clapprPlayer.stop();
-                        }
-    
-                        activePlayer = playerType;
-                        var container = document.getElementById("playerContainer");
-    
-                        if (playerType === "clappr") {
-                            container.innerHTML = ""; // Clear container
-                            clapprPlayer = new Clappr.Player({
-                                source: stream,
-                                parentId: "#playerContainer",
-                                height: 520,
-                                width: "100%",
-                                disableVideoTagContextMenu: false,
-                            });
-                        }
+                autostart: false
+            });
+            (function(open) {
+                XMLHttpRequest.prototype.open = function(method, url) {
+                    if (-1 !== url.indexOf('https://playback.svcs.mlb.com/silk/events/')) {
+                        url = url.replace('playback.svcs.mlb.com', 'edge.svcs.mlb.com');
                     }
-    
-                    // Automatically load the Clappr player on page load
-                    window.onload = function() {
-                        showPlayer('clappr', 'https://bp3.mrgamingstreams.com/mrgmaingnba4.m3u8'); // Default stream
-                    };
-                </script>
-            </div>
-            <div class="embedchat">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/live_chat?v=iXVkrL8Q1gY&amp;embed_domain=mrgamingstreams.com"></iframe>
-            </div>
-        </div>
-    </main>
-    <footer class="footerformat">
-        <a href="/"><p style="color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-style: italic; font-size: 20px;">MrGamingStreams</p></a>
-    </footer>
-<noscript>
-    <meta http-equiv="refresh" content="0;url=https://mrgamingstreams.com">
-</noscript>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var isJavaScriptEnabled = true;
-
-        try {
-            var testElement = document.createElement('div');
-        } catch (e) {
-            isJavaScriptEnabled = false;
-        }
-
-        if (!isJavaScriptEnabled) {
-            window.location.href = 'https://mrgamingstreams.com';
-        }
-    });
-</script>
-</body>
+                    this.addEventListener('readystatechange', function() {}, false);
+                    open.call(this, method, url);
+                    if (-1 !== url.indexOf('edge.svcs.mlb.com')) {
+                        this.setRequestHeader('authorization', "eyJraWQiOiI5NDljZjE1ZS1mMTYwLTRlMzctYTRhOS1jYWMxYWFmMjk3ZWEiLCJhbGciOiJFZERTQSJ9.eyJuYmYiOjE3MTA5MDc3ODEsImp0aSI6ImFjOTYwMGE1LWEwM2ItNDc5NS1hMDdkLWUzOTBlMWIxNDQ3YiIsImV4cCI6MTcxMDkyMjE4MSwiaWF0IjoxNzEwOTA3NzgxLCJzdWIiOiIwMHU4ZWI3OWZ3TWNTbzYxRDM1NiIsImNvbnRleHQiOnsiZXhwaXJlc19vbiI6IjIwMjQtMDMtMjBUMDg6MDk6NDEuMjkzKzAwMDAiLCJleHBlcmltZW50cyI6e30sInVwZGF0ZWRfb24iOiIyMDI0LTAzLTIwVDA0OjA5OjQxLjI5MyswMDAwIiwiZ2xvYmFsX3RpbWVfb3ZlcnJpZGUiOiIiLCJtZWRpYV9wZXJtaXNzaW9ucyI6eyJlbnRpdGxlbWVudHMiOlsiTWlMQkFMTCIsIkFORFJPSURBVEJBVCIsIklQSE9ORUFUQkFUIiwiTUxCQVVESU8iLCJTVUJTQ1JJQkVSVk9EIiwiTUxCVFZfU1RQX0xBIl0sInJ1bGVzIjp7InBhc3NlZCI6W119LCJkYXRhIjp7fX0sImFjdGl2ZV9wcm9maWxlX2lkIjoiIiwidmVyc2lvbiI6IlYyLjAuMCIsImlkIjoiYWNmOTk0NjAtZTY2Zi0xMWVlLTk1NzAtMDI0MmFjMTEwMDA3IiwidHlwZSI6IlJFR0lTVEVSRUQiLCJhY2Nlc3MiOnsiaXNfc3Vic2NyaWJlciI6dHJ1ZSwiZW50aXRsZW1lbnRzIjp7ImNvbnRlbnQiOlsiTUxCQVVESU8iLCJBTkRST0lEQVRCQVQiLCJJUEhPTkVBVEJBVCIsIlNVQlNDUklCRVJWT0QiLCJNTEJUVl9TVFBfTEEiLCJNaUxCQUxMIl19fSwiZ2VuZXJhdGVkX29uIjoiMjAyNC0wMy0yMFQwNDowOTo0MS4yOTMrMDAwMCIsImxvY2F0aW9uIjp7InppcF9jb2RlIjoiOTAwNjQiLCJyZWdpb25fbmFtZSI6IiIsImNhcnJpZXIiOiJuYW1lY2hlYXAgaW5jLiIsImNvbm5lY3Rpb25fdHlwZSI6ImJyb2FkYmFuZCIsImNvdW50cnlfY29kZSI6IlVTIiwiZGlzdHJpYnV0aW9uX2FyZWFzIjpbMjQwMDUsMjM4NDYsMSwyMzg0NSwzMzQsMjM4MzEsMjQyODJdLCJjaXR5X25hbWUiOiJsb3MgYW5nZWxlcyIsInR5cGUiOiJaSVBfQ09ERSIsInN0YXRlX25hbWUiOiJjYSIsImRtYSI6ODAzLCJhc24iOiIyMjYxMiJ9LCJwYXJ0bmVyIjp7Im5hbWUiOiJtbGJ0diJ9LCJsb2NhdGlvbl92MiI6eyJwaHlzaWNhbCI6eyJ6aXBfY29kZSI6IjkwMDY0IiwicmVnaW9uX25hbWUiOiIiLCJjYXJyaWVyIjoibmFtZWNoZWFwIGluYy4iLCJjb25uZWN0aW9uX3R5cGUiOiJicm9hZGJhbmQiLCJjb3VudHJ5X2NvZGUiOiJVUyIsImRpc3RyaWJ1dGlvbl9hcmVhcyI6WzI0MDA1LDIzODQ2LDEsMjM4NDUsMzM0LDIzODMxLDI0MjgyXSwiY2l0eV9uYW1lIjoibG9zIGFuZ2VsZXMiLCJ0eXBlIjoiWklQX0NPREUiLCJzdGF0ZV9uYW1lIjoiY2EiLCJ0aW1lX3pvbmUiOnsiaWQiOiJBbWVyaWNhL0xvc19BbmdlbGVzIiwidXRjX29mZnNldCI6Ii0wNzowMCIsImluX2RzdCI6dHJ1ZX0sImRtYSI6ODAzLCJhc24iOiIyMjYxMiJ9fSwiYmxhY2tvdXRzIjp7ImVudGl0bGVtZW50cyI6W10sInJ1bGVzIjp7InZpb2xhdGVkIjpbXX0sImRhdGEiOnt9fSwiaXBfYWRkcmVzcyI6IjE2Mi4wLjIzNC41NiIsImFjY291bnQiOnsidHlwZSI6InVybjpiYW10ZWNoOmFjY291bnQiLCJpZCI6IjAwdThlYjc5ZndNY1NvNjFEMzU2IiwiZGF0YSI6e319LCJzdXBwb3J0ZWQiOnRydWUsImRldmljZSI6eyJtb2RlbCI6IiIsInByb2ZpbGUiOiIiLCJ0eXBlIjoidXJuOmRzczpkZXZpY2U6ZXh0ZXJuYWwiLCJwbGF0Zm9ybSI6ImJyb3dzZXIiLCJmYW1pbHkiOiIiLCJhcHBfcnVudGltZSI6IiIsImlkIjoiN2M4YTJlMTItODM0ZC00MDk3LTkwZTUtZjMyYzdhNDBiYWM1In0sInByb2ZpbGVzIjpbXX0sInBhcnRuZXJOYW1lIjoibWxidHYiLCJpc3MiOiJ1cm46dHdkYzpzZXJ2aWNlOnRva2VuOnNlcnZpY2UiLCJlbnYiOiJwcm9kIn0.reusTTahxwIzoUcGpJlU_x0QdTQUQGAO3xsHCht8FYaeKQMmzthTNUPQ3MjjtK2TS-DcBE0jOg1Q4NP6LEn4DQ");
+                    }
+                }
+                ;
+            }
+            )(XMLHttpRequest.prototype.open);
+        </script>
+    </body>
 </html>
