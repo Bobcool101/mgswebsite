@@ -46,7 +46,6 @@
     <link href="/css/layout.css" rel="stylesheet">
     <link href="/css/player&buttons.css" rel="stylesheet">
     <link href="/css/mobile.css" rel="stylesheet">
-    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F8DB3G2HXM"></script>
     <script>
@@ -56,6 +55,7 @@
 
     gtag('config', 'G-F8DB3G2HXM');
     </script>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
     <style>
 
     </style>
@@ -104,8 +104,8 @@
         <div class="fullplayer">
          <div class="player">
             <div class="streambuttoncase">
-                <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">PC</button>
-                <button class="streambutton" onclick="showPlayer('clappr', 'https://catowrap.live/mrgamingespn2.m3u8')">Mobile</button>
+                <button class="streambutton" onclick="showPlayer('clappr', 'https://bp3.mrgamingstreams.com/mrgamingncaa.m3u8')">Stream 1</button>
+                <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">RAW FEED (PC ONLY)</button>
             </div>
                     <!-- Players -->
         <div class="player" id="playerContainer"></div>
@@ -136,7 +136,7 @@
                         disableVideoTagContextMenu: false,
                     });
                 } else if (playerType === "twitchalt2") {
-                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/espn2" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/trutv" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 }
                 
                 
@@ -144,7 +144,7 @@
     
             // Automatically load the Clappr player on page load
             window.onload = function() {
-                showPlayer('twitchalt2', 'ketapasando'); // Default stream
+                showPlayer('clappr', 'https://bp3.mrgamingstreams.com/mrgamingncaa.m3u8'); // Default stream
             };
         </script>
             </div>
@@ -156,8 +156,6 @@
     <footer class="footerformat">
         <a href="/"><p style="color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-style: italic; font-size: 20px;">MrGamingStreams</p></a>
     </footer>
-<noscript>
-    <meta http-equiv="refresh" content="0;url=https://mrgamingstreams.com">
 </noscript>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
