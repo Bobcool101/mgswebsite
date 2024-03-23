@@ -17,12 +17,10 @@
     })
   </script>
     <script>
-        // Disable right-click
         document.addEventListener('contextmenu', function (e) {
             e.preventDefault();
         });
 
-        // Disable access to developer tools
         document.addEventListener('keydown', function (e) {
             if ((e.key === 'F12' || (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'C'))) ||
                 (e.ctrlKey && e.shiftKey && e.key === 'J')) {
@@ -104,8 +102,7 @@
         <div class="fullplayer">
             <div class="player">
                 <div class="streambuttoncase">
-                    <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/supercars.m3u8')">Stream 1</button>
-                    <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/sky.m3u8')">Stream 2</button>
+                    <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/flo4.m3u8')">Stream 1</button>
                 </div>
                 <!-- Players -->
                 <div class="player" id="playerContainer"></div>
@@ -136,7 +133,7 @@
     
                     // Automatically load the Clappr player on page load
                     window.onload = function() {
-                        showPlayer('clappr', 'https://bp1.mrgamingstreams.com/supercars.m3u8'); // Default stream
+                        showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/flo4.m3u8'); // Default stream
                     };
                 </script>
             </div>
@@ -148,6 +145,8 @@
     <footer class="footerformat">
         <a href="/"><p style="color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-style: italic; font-size: 20px;">MrGamingStreams</p></a>
     </footer>
+<noscript>
+    <meta http-equiv="refresh" content="0;url=https://mrgamingstreams.com">
 </noscript>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -164,7 +163,5 @@
         }
     });
 </script>
-</body>
-</html>
 </body>
 </html>
