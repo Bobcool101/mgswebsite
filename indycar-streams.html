@@ -107,7 +107,8 @@
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://mcdn.mrgamingstreams.com/mrgamingindy.m3u8')">Stream 1</button>
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://bp1.mrgamingstreams.com/mrgamingindycar.m3u8')">Stream 2</button>
                 <button class="streambutton" onclick="showPlayer('clappr', 'https://bp3.mrgamingstreams.com/mrgamingindycar.m3u8')">Stream 3</button>
-                <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">RAW FEED (PC ONLY)</button>
+                <button class="streambutton" onclick="showPlayer('twitchalt2', 'ketapasando')">RAW SKY</button>
+                <button class="streambutton" onclick="showPlayer('nbc', 'ketapasando')">RAW NBC</button>
             </div>
                     <!-- Players -->
         <div class="player" id="playerContainer"></div>
@@ -139,6 +140,8 @@
                     });
                 } else if (playerType === "twitchalt2") {
                     container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/sky-sports-f1" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
+                } else if (playerType === "nbc") {
+                    container.innerHTML = '<iframe id="twitchPlayer" src="https://mrgamingstreams.com/mgsdedicated/nbc" frameborder="0" allow="autoplay" allowfullscreen height="520" width="100%"></iframe>';
                 }
                 
                 
